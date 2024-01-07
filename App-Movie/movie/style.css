@@ -1,0 +1,417 @@
+/* Import the Poppins font with two weights (200 and 400) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Define root-level CSS variables for primary and secondary colors */
+
+
+/* Apply a global box-sizing reset for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the page body with background color, font family, and remove margin */
+body {
+    background-image: url('images/image1.jpg');
+    /* Replace 'images/image1.jpg' with your image file */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the image */
+    background-attachment: fixed;
+    /* Fixed background */
+    /* Light gray background */
+    font-family: 'Poppins', sans-serif;
+    /* Apply the Poppins font */
+    margin: 0;
+    /* Remove default margin */
+    animation: change 10s infinite ease-in-out;
+}
+/*   providing moving the web page using animaton and keyframes that can make the website dynamic without applying javascript*/
+@keyframes change {
+    0%{
+        background-image: url("image6.jpg");
+    }
+
+    20% {
+        background-image: url("images/image2.jpg");
+    }
+
+    40% {
+        background-image: url("images/image3.jpg");
+    }
+
+    60% {
+        background-image: url("images/images7.jpeg");
+    }
+
+    80% {
+        background-image: url("images/5.jpg");
+    }
+
+    100% {
+        background-image: url("images/10.jpg");
+    }
+}
+
+/* Style the header with padding, flex layout, and secondary background color */
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+    /* Use primary color for the header */
+}
+
+.headme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    /* Replace 'Montserrat' with your chosen font */
+    font-size: 36px;
+    /* Increase font size */
+    font-weight: bold;
+    /* Use a bold font weight */
+    color: #000000;
+    /* Black color */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle text shadow */
+    padding: 10px 20px;
+    /* Add padding for background or decorative element */
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    /* Gradient background (adjust colors as needed) */
+    z-index: 1;
+    border-radius: 5px;
+    /* Add border-radius for a rounded background */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    /* Add box shadow for depth */
+    animation: bounce 2s infinite;
+    /* Add a bounce animation (adjust as needed) */
+}
+
+/* Define a bounce animation */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0); /* transform the axis in x axis or make animations in x axis */
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.logo-container {
+    float: right;
+    /* Float the container to the left */
+    margin: 0.5rem 1rem 0.5rem 0;
+    /* Add margins for spacing */
+}
+
+/*
+1. Use px for fixed sizes when you need precise control. 
+2. Use em when you want relative sizing based on the parent element's font size.
+3. Use rem for global layout settings that should remain consistent throughout your web page,
+regardless of nesting.
+*/
+
+.logo-container img {
+    width: 40px;
+    /* Adjust the width as needed for a small size */
+    height: auto;
+    /* border-radius: 0.5rem; */
+    /* Maintain aspect ratio */
+}
+
+/* Style the search input with a transparent background, border, and custom font */
+/* Import the Poppins font with two weights (200 and 400) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Define root-level CSS variables for primary and secondary colors */
+:root {
+    --primary-color: #191970;
+    /* Reddish-pink for primary color */
+    --secondary-color: #6d5fff;
+    /* Purplish-blue for secondary color */
+    --text-color: #333;
+    /* Dark gray text color */
+    --accent-color: #ff9e80;
+    /* Lighter orange accent color */
+}
+
+/* Apply a global box-sizing reset for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the page body with background color, font family, and remove margin */
+body {
+    /* background-image: url('image6.jpg'); */
+    /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the image */
+    background-attachment: fixed;
+    /* Fixed background */
+    /* Light gray background */
+    font-family: 'Poppins', sans-serif;
+    /* Apply the Poppins font */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Style the header with padding, flex layout, and secondary background color */
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000000;
+    /* Use primary color for the header */
+}
+
+.headme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    /* Replace 'Montserrat' with your chosen font */
+    font-size: 36px;
+    /* Increase font size */
+    font-weight: bold;
+    /* Use a bold font weight */
+    color: #000000;
+    /* Black color */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle text shadow */
+    padding: 10px 20px;
+    /* Add padding for background or decorative element */
+    background: linear-gradient(45deg, #115f19, #FFA500);
+    /* Gradient background (adjust colors as needed) */
+    z-index: 1; 
+    border-radius: 5px;
+    /* Add border-radius for a rounded background */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    /* Add box shadow for depth */
+    animation: bounce 2s infinite;
+    /* Add a bounce animation (adjust as needed) */
+}
+
+/* Define a bounce animation */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.logo-container {
+    float: right;
+    /* Float the container to the left */
+    margin: 0.5rem 1rem 0.5rem 0;
+    /* Add margins for spacing */
+}
+/*  Inline elements are typically used for text-level elements and don't create a new line.
+    Block elements are used for structural elements and create a new block formatting context. 
+    Inline-block elements are a combination of inline and block elements and can be useful for creating layouts 
+    where you want elements to flow horizontally while retaining block-like characteristics. */
+.logo-container img {
+    width: 40px;
+    /* Adjust the width as needed for a small size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Style the search input with a transparent background, border, and custom font */
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    transition: border-color 0.3s ease-in-out;
+    /* Add a smooth transition for the border color */
+    width: 100%;
+    /* Make the search box expand to full width */
+}
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #191244;
+    border-color: #ffffff;
+    /* Change border color on focus */
+}
+
+/* Add a subtle box shadow on focus for a more interactive feel */
+.search:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Style the search button */
+#form #search-button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    /* Add a smooth transition for the button background color */
+}
+
+/* Center the search box and button within the header */
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Style the main content container with flex properties */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center child elements horizontally */
+}
+
+/* Style the movie containers with fixed width, margin, shadow, and border radius */
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: #fff;
+    /* White background for movie container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Slightly elevated box shadow */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /* Rounded corners for movie container */
+    cursor: pointer;
+    /* Add a pointer cursor for interaction */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Style movie images to fill their containers */
+.movie img {
+    width: 100%;
+    border: 7px solid rgb(255, 0, 0);
+    border-radius: 0.5rem;
+    /* box-shadow: #000000; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* .a{
+    background-color: #000000;
+} */
+
+/* Style movie information with custom color, flex properties, and spacing */
+.movie-info {
+    color: var(--text-color);
+    /* Use dark gray text color for movie info */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+    padding: 0.5rem 1rem 1rem;
+    /* Padding for movie info */
+    letter-spacing: 0.5px;
+    bottom: 0%;
+}
+
+/* Style movie info title with larger and bold text */
+.movie-info h3 {
+    margin-top: 0;
+    /* Remove top margin from the title */
+    font-size: 1.2rem;
+    /* Larger font size */
+    font-weight: bold;
+    /* Bold text */
+    color: #000000;
+}
+
+/* Style movie info spans with background color, padding, and font weight */
+.movie-info span {
+    background-color: var(--accent-color);
+    /* Use accent color for background */
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    /* White text color */
+}
+
+/* Style specific spans with different text colors */
+.movie-info span.green {
+    background-color: #57bb8a;
+    /* Custom green background color */
+}
+
+.movie-info span.orange {
+    background-color: #ffac5e;
+    /* Custom orange background color */
+}
+
+.movie-info span.red {
+    background-color: #ff5f6d;
+    /* Custom red background color */
+}
+
+/* Style the movie overview with white background and positioning */
+.overview {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    /* Initially hide the overview off-screen */
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    /* Add a smooth transition effect */
+}
+
+/* Show the movie overview when hovering over a movie and add a shadow effect */
+.movie:hover .overview {
+    transform: translateY(0);
+    /* Move the overview back into view */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    /* Larger shadow on hover */
+}
+
+/* Style the main content container with flex properties */

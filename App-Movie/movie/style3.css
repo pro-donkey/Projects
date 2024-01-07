@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    animation: change 10s infinite ease-in-out;
+}
+
+@keyframes change {
+    0%{
+        background-image: url("image6.jpg");
+    }
+
+    20% {
+        background-image: url("images/image2.jpg");
+    }
+
+    40% {
+        background-image: url("images/image3.jpg");
+    }
+
+    60% {
+        background-image: url("images/images7.jpeg");
+    }
+
+    80% {
+        background-image: url("images/5.jpg");
+    }
+
+    100% {
+        background-image: url("images/10.jpg");
+    }
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+}
+
+.headme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.logo-container {
+    float: right;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.logo-container img {
+    width: 40px;
+    height: auto;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    transition: border-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #191244;
+    border-color: #ffffff;
+}
+
+.search:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+#form #search-button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.movie img {
+    width: 100%;
+    border: 7px solid rgb(0, 255, 234);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.movie-info {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+    bottom: 0%;
+}
+
+.movie-info h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.movie-info span {
+    background-color: var(--accent-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+}
+
+.movie-info span.green {
+    background-color: #57bb8a;
+}
+
+.movie-info span.orange {
+    background-color: #ffac5e;
+}
+
+.movie-info span.red {
+    background-color: #ff5f6d;
+}
+
+.overview {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
