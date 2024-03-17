@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Recpie</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+
+
+    <div class="header-2">
+
+        <a href="#" class="logo">   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5RX6tM4fUGQ9H6WE-PQvxP6uMH5ceHraWM9aDyiaW4jnwAOyI9gBuuYG4fmgv_Qf7uo&usqp=CAU" alt="Logo">Recipe Predictor </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#Hello">options</a>
+            <a href="#category">category</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper-container home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(https://img.freepik.com/free-photo/flat-lay-table-full-delicious-food-arrangement_23-2149141371.jpg);">
+                    <div class="content">
+                      <div class="content">
+  <span style="color: white;"></span>
+  <h3 style="color: white;">Food is our common ground, a universal experience.</h3>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box" style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GxycR2QIBjc_1LjtHVYnVi191dJr4kUGXHnZl8WIaHcMbpvnXW-p8lys_uelqM9Kj4A&usqp=CAU);">
+                    <div class="content">
+                        <span></span>
+                        <h3  style="color: white;">One cannot think well, love well, sleep well if one has not dined well.</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box" style="background: url(https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg);">
+                    <div class="content">
+                        <h3 style="color: white;">There is no love sincerer than the love of food.</h3>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container" id = "Hello">
+
+    <div class="banner">
+        <img src="https://cdn2.vectorstock.com/i/1000x1000/96/36/delicious-set-fruits-healthy-food-pattern-vector-25059636.jpg" alt="">
+        <div class="content">
+            <h3>Predict Image</h3>
+            <a href="\Image" class="btn">Open Camera</a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/420/342/original/vector-colorful-food-pattern.jpg" alt="">
+        <div class="content">
+            <h3>Upload image</h>
+              <br>
+            <a href="\uploadimage" class="btn">Upload</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+<h1 class="heading"> Category of Food  </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+        <div class="content">
+            <h3>Burger</h3>
+            <a href="\Burger" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/02/05/Baked-Feta-Pasta-4_s4x3.jpg.rend.hgtvcom.511.288.suffix/1615916524567.jpeg" alt="">
+        <div class="content">
+            <h3>Spaghetti Carbonara</h3>
+            <a href="\Cherry" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/samosa-recipe.jpg" alt="">
+        <div class="content">
+            <h3>Samosa</h3>
+            <a href="\Corn" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://c.ndtvimg.com/2021-09/iptadnn8_vada-pav_625x300_23_September_21.jpg" alt="">
+        <div class="content">
+            <h3>Vada Pav</h3>
+            <a href="\Grapes" class="btn">Detect</a>
+        </div>
+    </div>
+
+
+</div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- product section starts  -->
+<section class="category" id="category">
+
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="https://spicecravings.com/wp-content/uploads/2018/07/10-Minute-Kadai-Paneer-1.jpg" alt="">
+        <div class="content">
+            <h3>Kadhi Paneer</h3>
+            <a href="\KadhiPaneer" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREnoBwVv53iGoFcVU-TqbdkDfwb6X4HS2LRYwdg7IV_7-TTBlmeqY6LRPoOes23W78RDY&usqp=CAU" alt="">
+        <div class="content">
+            <h3>Lazania</h3>
+            <a href="\Lazania" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/05/paneer-pizza-recipe-1.jpg" alt="">
+        <div class="content">
+            <h3>Pizza</h3>
+            <a href="\Pizza" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://m.economictimes.com/thumb/msid-101704407,width-1200,height-900,resizemode-4,imgsize-1973619/national-french-fry-day-2023-check-mcdonalds-heinz-and-uber-eats-burger-kings-deals-offers.jpg" alt="">
+        <div class="content">
+            <h3>Frech Fries</h3>
+            <a href="\FrenchFries" class="btn">Detect</a>
+        </div>
+    </div>
+
+
+</div>
+
+</section>
+
+<!-- product section ends -->
+<section class="category" id="category">
+
+
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken--750x750.jpg" alt="">
+        <div class="content">
+            <h3>Butter Chicken</h3>
+            <a href="\ButterChicken" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://www.allrecipes.com/thmb/WqWggh6NwG-r8PoeA3OfW908FUY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21014-Good-old-Fashioned-Pancakes-mfs_001-1fa26bcdedc345f182537d95b6cf92d8.jpg" alt="">
+        <div class="content">
+            <h3>Pancakes</h3>
+            <a href="\Pancake" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cdn.foodaciously.com/static/recipes/ee9fd204-25cf-4e97-be5a-d7626470d420/easy-vegan-momos-recipe-7ab341154a5c13d6d9642300e7e2c92d-2560.jpg" alt="">
+        <div class="content">
+            <h3>Momos</h3>
+            <a href="\momos" class="btn">Detect</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://www.ticklingpalates.com/wp-content/uploads/2022/03/plain-dosa.jpg" alt="">
+        <div class="content">
+            <h3>Dosa</h3>
+            <a href="\Dosa" class="btn">Detect</a>
+        </div>
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- .icons section starts  -->
+<section class="icons-container">
+
+    <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/2927/2927347.png" alt="" style="width: 64px; height: 64px;">
+        <div class="content">
+            <h3>Free Use</h3>
+            <p>Free and usable anytime</p>
+        </div>
+    </div>
+    <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1784/1784216.png" alt="" style="width: 64px; height: 64px;">
+        <div class="content">
+            <h3>Picture Detection</h3>
+            <p>Image detecting model</p>
+        </div>
+    </div>
+    <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/706/706195.png" alt="" style="width: 64px; height: 64px;">
+        <div class="content">
+            <h3>User Friendly</h3>
+            <p>Accurate usage</p>
+        </div>
+    </div>
+    <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/4080/4080032.png" alt="" style="width: 64px; height: 64px;">
+        <div class="content">
+            <h3>Support 24/7</h3>
+            <p>Use any time</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- .icons section ends -->
+
+<!-- deal section starts  -->
+
+
+
+<!-- deal section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading">get in touch</h1>
+
+<div class="row">
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.895920873054!2d72.83196972644954!3d19.141670564195152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1621609263469!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+    <form action="https://getform.io/f/22193d0f-8c7f-4aef-a93b-0dfdc6daf663" method="POST">
+
+        <div class="inputBox">
+          Name<input type="text" name="name">
+  Email<input type="email" name="email">
+  Problem<input type="text" name="message">
+
+  <!-- radio button handle -->
+  Male<input type="radio" name="gender" value="male" checked>
+  Female<input type="radio" name="gender" value="female">
+  Other<input type="radio" name="gender" value="other">
+  <!-- select field handle -->
+        </div>
+
+        <input type="submit" value="send message" class="btn">
+
+    </form>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+7
+<section class="footer">
+
+
+
+    <h1 class="credit"> created by <span> CSE-AI</span> </h1>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- scroll top button  -->
+<a href="#home" class="scroll-top fas fa-angle-up"></a>
+
+
+
+
+
+
+
+<div class="header-1">
+
+    <div class="share">
+        <span> follow us : </span>
+        <a href="https://www.facebook.com/kc360jammu/" class="fab fa-facebook-f"></a>
+        <a href="https://kc360.in/" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/kc360jammu/" class="fab fa-instagram"></a>
+        <a href="https://kc360.in/" class="fab fa-linkedin"></a>
+    </div>
+
+    <div class="call">
+        <span> call us : </span>
+        <a href="#">+916283362481</a>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{ url_for('static',filename='script.js')}}"></script>
+
+</body>
+</html>

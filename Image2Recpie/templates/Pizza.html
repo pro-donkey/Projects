@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .ingredients {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .instructions {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .burger-image {
+                max-width: 100%;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class="fas fa-seedling"></i> Recipe Predictor </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">options</a>
+            <a href="index.html">category</a>
+            <a href="index.html">contact</a>
+        </nav>
+
+
+    </div>
+
+</header>
+<br>
+
+  <h1>Classic Homemade Pizza Recipe</h1>
+  <br>
+  <br>
+  <div class="ingredients">
+  <ul>Ingredients:
+      <li>For the Pizza Dough:</li>
+      <li>2 1/4 teaspoons (1 packet) active dry yeast</li>
+      <li>1 1/2 cups warm water (110°F/43°C)</li>
+      <li>4 cups all-purpose flour</li>
+      <li>1 teaspoon sugar</li>
+      <li>2 tablespoons olive oil</li>
+      <li>1 teaspoon salt</li>
+      <li>For the Pizza Sauce:</li>
+<li>1 (14-ounce) can crushed tomatoes</li>
+<li>1 clove garlic, minced</li>
+<li>1 teaspoon dried basil</li>
+<li>1 teaspoon dried oregano</li>
+<li>Salt and black pepper, to taste</li>
+
+<li>For Toppings (Customize as Desired):</li>
+<li>2 cups shredded mozzarella cheese</li>
+<li>Sliced pepperoni</li>
+<li>Sliced bell peppers</li>
+<li>Sliced black olives</li>
+<li>Sliced mushrooms</li>
+<li>Sliced red onion</li>
+<li>Fresh basil leaves, for garnish</li>
+</ul>
+<ul>Instructions:
+    <li>1. Prepare the Pizza Dough:</li>
+    <li>In a small bowl, combine the warm water, sugar, and active dry yeast. Let it sit for about 5-10 minutes until it becomes frothy.</li>
+    <li>In a large mixing bowl, combine the flour and salt. Make a well in the center and pour in the yeast mixture and olive oil.</li>
+    <li>Stir until a dough forms, then knead it on a floured surface for about 5-7 minutes until smooth and elastic.</li>
+    <li>Place the dough in a greased bowl, cover it with a damp cloth, and let it rise in a warm place for 1-2 hours until it has doubled in size.</li>
+    <li>2. Prepare the Pizza Sauce:</li>
+    <li>In a saucepan over medium heat, combine the crushed tomatoes, minced garlic, dried basil, dried oregano, salt, and black pepper.</li>
+    <li>Simmer the sauce for about 15-20 minutes, stirring occasionally, until it thickens. Remove from heat and let it cool.</li>
+
+    <li>3. Preheat the Oven:</li>
+    <li>Preheat your oven to 475°F (245°C). If you have a pizza stone, place it in the oven as it preheats.</li>
+
+    <li>4. Shape the Pizza:</li>
+    <li>Punch down the risen pizza dough and divide it into two equal portions for two 12-inch pizzas or make one large pizza if desired.</li>
+    <li>On a floured surface, roll out the dough into a circle or rectangle, depending on your pizza pan or stone.</li>
+
+    <li>5. Assemble the Pizza:</li>
+    <li>Transfer the rolled-out dough to a pizza stone or baking sheet.</li>
+    <li>Spread a generous amount of pizza sauce evenly over the dough, leaving a small border for the crust.</li>
+    <li>Sprinkle shredded mozzarella cheese over the sauce and add your favorite toppings.</li>
+
+    <li>6. Bake the Pizza:</li>
+    <li>Place the pizza in the preheated oven and bake for 12-15 minutes (or longer for a larger pizza) until the crust is golden and the cheese is bubbly and slightly browned.</li>
+
+    <li>7. Serve:</li>
+    <li>Remove the pizza from the oven, let it cool for a minute, garnish with fresh basil leaves, and slice into wedges or squares.</li>
+    <li>Enjoy your classic homemade pizza!</li>
+  </ul>
+  </div>
+</body>

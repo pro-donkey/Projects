@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .ingredients {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .instructions {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .burger-image {
+                max-width: 100%;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class="fas fa-seedling"></i> Recipe Predictor </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">options</a>
+            <a href="index.html">category</a>
+            <a href="index.html">contact</a>
+        </nav>
+
+
+    </div>
+
+</header>
+<br>
+<h1>Classic Lasagna Recipe</h1>
+<br>
+<br>
+<div class="ingredients">
+<ul>Ingredients:
+    <li>12 lasagna noodles</li>
+    <li>1 pound (450 grams) ground beef</li>
+    <li>1 onion, chopped</li>
+    <li>2 cloves garlic, minced</li>
+    <li>1 (28-ounce) can crushed tomatoes</li>
+    <li>2 (6-ounce) cans tomato paste</li>
+    <li>2 (6.5-ounce) cans canned tomato sauce</li>
+    <li>1/2 cup water</li>
+    <li>2 tablespoons white sugar</li>
+    <li>2 teaspoons dried basil leaves</li>
+    <li>1/2 teaspoon salt</li>
+    <li>1/4 teaspoon black pepper</li>
+    <li>3 cups ricotta cheese</li>
+    <li>2 eggs</li>
+    <li>3 cups shredded mozzarella cheese</li>
+    <li>2 cups grated Parmesan cheese</li>
+    <li>2 tablespoons chopped fresh parsley</li>
+</ul>
+<ul>Instructions:
+    <li>1. Cook the Lasagna Noodles:</li>
+    <li>Bring a large pot of salted water to a boil. Cook the lasagna noodles according to the package instructions until al dente. Drain and set aside.</li>
+    <li>2. Prepare the Meat Sauce:</li>
+<li>In a large skillet, brown the ground beef over medium-high heat. Drain excess fat if necessary.</li>
+<li>Add chopped onion and minced garlic to the skillet and sauté until the onion is translucent.</li>
+<li>Stir in crushed tomatoes, tomato paste, tomato sauce, water, sugar, basil, salt, and black pepper. Bring to a simmer and let it cook for about 20 minutes, stirring occasionally.</li>
+
+<li>3. Prepare the Ricotta Mixture:</li>
+<li>In a mixing bowl, combine the ricotta cheese, eggs, and chopped fresh parsley. Mix well until smooth and well combined.</li>
+
+<li>4. Assemble the Lasagna:</li>
+<li>Preheat your oven to 375°F (190°C).</li>
+<li>In a 9x13-inch baking dish, spread a thin layer of the meat sauce to prevent sticking.</li>
+<li>Place a layer of cooked lasagna noodles over the sauce.</li>
+<li>Spread half of the ricotta mixture evenly over the noodles.</li>
+<li>Sprinkle 1 cup of mozzarella cheese and 1/2 cup of grated Parmesan cheese over the ricotta layer.</li>
+<li>Repeat the layers: meat sauce, noodles, remaining ricotta mixture, 1 cup of mozzarella cheese, and 1/2 cup of grated Parmesan cheese.</li>
+<li>Top with a final layer of meat sauce, remaining mozzarella cheese, and Parmesan cheese.</li>
+
+<li>5. Bake:</li>
+<li>Cover the baking dish with aluminum foil and bake in the preheated oven for 25 minutes.</li>
+<li>Remove the foil and bake for an additional 25 minutes, or until the lasagna is hot and bubbly, and the cheese is golden brown.</li>
+
+<li>6. Serve:</li>
+<li>Allow the lasagna to rest for 10-15 minutes before slicing and serving. Garnish with additional fresh parsley, if desired.</li>
+<li>Enjoy your classic Lasagna with a side of garlic bread or a simple green salad!</li>
+</ul>
+</div>
+
+</body>

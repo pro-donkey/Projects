@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .ingredients {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .instructions {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .burger-image {
+                max-width: 100%;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class="fas fa-seedling"></i> Recipe Predictor </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">options</a>
+            <a href="index.html">category</a>
+            <a href="index.html">contact</a>
+        </nav>
+
+
+    </div>
+
+</header>
+<br>
+<h1>Classic Burger Recipe</h1>
+<br>
+<br>
+<div class="ingredients">
+<ul>Ingredients:
+    <li>1 pound ground beef</li>
+    <li>1/2 teaspoon salt</li>
+    <li>1/4 teaspoon black pepper</li>
+    <li>4 hamburger buns</li>
+    <li>Lettuce leaves</li>
+    <li>Sliced tomatoes</li>
+    <li>Sliced onions</li>
+    <li>Pickles</li>
+</ul>
+
+<ul>Instructions:
+    <li>1. Preheat your grill or stovetop pan over medium-high heat.</li>
+    <li>2. Divide the ground beef into 4 equal portions and shape them into burger patties. Season both sides of each patty with salt and pepper.</li>
+    <li>3. Place the burger patties on the grill or pan and cook for about 4-5 minutes per side for medium-rare, or adjust the cooking time to your desired level of doneness.</li>
+    <li>4. While the burgers are cooking, lightly toast the hamburger buns on the grill or in a toaster.</li>
+    <li>5. Once the burgers are done, remove them from the heat and let them rest for a minute.</li>
+    <li>6. Assemble the burgers by placing a lettuce leaf on the bottom half of each bun, followed by a burger patty, sliced tomatoes, sliced onions, and pickles.</li>
+    <li>7. Top with the other half of the bun and serve your delicious classic burgers with your favorite condiments and side dishes.</li>
+</ul>
+
+</div>
+</body>

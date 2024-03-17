@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .ingredients {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .instructions {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .burger-image {
+                max-width: 100%;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class="fas fa-seedling"></i> Recipe Predictor </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">options</a>
+            <a href="index.html">category</a>
+            <a href="index.html">contact</a>
+        </nav>
+
+
+    </div>
+
+</header>
+<br>
+<h1>Classic Momos Recipe</h1>
+<br>
+<br>
+<div class="ingredients">
+<ul>Ingredients:
+    <li>For the Dough:</li>
+    <li>2 cups all-purpose flour</li>
+    <li>1/2 teaspoon salt</li>
+    <li>Water, as needed</li>
+    <li>For the Filling:</li>
+<li>1/2 pound (225 grams) ground chicken, pork, or vegetables (cabbage, carrots, and mushrooms work well)</li>
+<li>1 small onion, finely chopped</li>
+<li>2 cloves garlic, minced</li>
+<li>1-inch piece of ginger, grated</li>
+<li>2-3 green chilies, finely chopped (adjust to your spice preference)</li>
+<li>1 tablespoon soy sauce</li>
+<li>1 tablespoon vegetable oil</li>
+<li>Salt and black pepper, to taste</li>
+
+<li>For the Dipping Sauce (Optional):</li>
+<li>2 tablespoons soy sauce</li>
+<li>1 tablespoon rice vinegar</li>
+<li>1 teaspoon sesame oil</li>
+<li>1/2 teaspoon sugar</li>
+
+<li>For Steaming:</li>
+<li>Oil or cooking spray, for greasing</li>
+</ul>
+<ul>Instructions:
+    <li>1. Prepare the Dough:</li>
+    <li>In a mixing bowl, combine the all-purpose flour and salt.</li>
+    <li>Add water gradually while kneading until you have a smooth, elastic dough. Cover it with a damp cloth and let it rest for 30 minutes.</li>
+    <li>2. Prepare the Filling:</li>
+<li>In a skillet, heat 1 tablespoon of vegetable oil over medium-high heat.</li>
+<li>Add the finely chopped onion, minced garlic, grated ginger, and green chilies. Sauté for a few minutes until the onions turn translucent.</li>
+<li>Add the ground meat or vegetable mixture and cook until it's no longer pink (for meat) or until the vegetables are tender.</li>
+<li>Stir in the soy sauce, salt, and black pepper. Cook for an additional 2-3 minutes until the mixture is well combined and any excess moisture has evaporated.</li>
+<li>Remove the filling from the heat and let it cool completely.</li>
+
+<li>3. Shape the Momos:</li>
+<li>Divide the rested dough into small, equal-sized balls.</li>
+<li>Roll each ball into a thin, round wrapper, about 3-4 inches in diameter. You can use a rolling pin or your hands to achieve this.</li>
+<li>Place a spoonful of the cooled filling in the center of each wrapper.</li>
+<li>Fold the wrapper in half, enclosing the filling, and then pinch the edges together to seal it. You can create pleats along the edges to give them a decorative look.</li>
+
+<li>4. Steam the Momos:</li>
+<li>Grease a steamer basket or tray with oil or cooking spray to prevent sticking.</li>
+<li>Arrange the momos in the steamer, leaving some space between them to prevent sticking.</li>
+<li>Steam the momos for about 15-20 minutes until they become translucent and the dough is cooked through.</li>
+
+<li>5. Prepare the Dipping Sauce (Optional):</li>
+<li>In a small bowl, mix together the soy sauce, rice vinegar, sesame oil, and sugar to make a dipping sauce.</li>
+
+<li>6. Serve:</li>
+<li>Transfer the steamed momos to a serving plate.</li>
+<li>Serve your classic momos hot with the optional dipping sauce, and enjoy this delicious Nepali and Tibetan dumpling dish!</li>
+</ul>
+</div>
+
+</body>

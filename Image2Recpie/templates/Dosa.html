@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .ingredients {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .instructions {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .burger-image {
+                max-width: 100%;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class="fas fa-seedling"></i> Recipe Predictor </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">options</a>
+            <a href="index.html">category</a>
+            <a href="index.html">contact</a>
+        </nav>
+
+
+    </div>
+
+</header>
+<br>
+<h1>Classic Dosa Recipe</h1>
+<br>
+<br>
+<div class="ingredients">
+<ul>Ingredients:
+    <li>For the Dosa Batter:</li>
+    <li>2 cups parboiled rice (or regular rice)</li>
+    <li>1/2 cup urad dal (split black gram)</li>
+    <li>1/4 teaspoon fenugreek seeds</li>
+    <li>Water, as needed</li>
+    <li>Salt, to taste</li>
+    <li>For Making Dosas:</li>
+<li>Vegetable oil or ghee (clarified butter)</li>
+</ul>
+<ul>Instructions:
+    <li>1. Prepare the Dosa Batter:</li>
+    <li>Wash the rice, urad dal, and fenugreek seeds thoroughly. Soak them together in enough water for about 4-6 hours or overnight.</li>
+    <li>Drain the soaked ingredients and grind them to a smooth batter using a blender or wet grinder. Add water as needed to achieve a medium-thick consistency similar to pancake batter.</li>
+    <li>Add salt to the batter and mix well. Allow the batter to ferment by covering it with a lid. Place it in a warm place for approximately 8-12 hours or overnight. The batter should double in volume and develop a slightly sour aroma.</li>
+    <li>2. Prepare the Dosa:</li>
+<li>Heat a non-stick skillet or dosa pan over medium-high heat. Grease it lightly with a small amount of vegetable oil or ghee.</li>
+<li>Pour a ladleful of the dosa batter onto the center of the hot pan. Quickly spread it outward in a circular motion to create a thin, even layer. You can make the dosa as thin or thick as you prefer.</li>
+<li>Drizzle a few drops of oil or ghee around the edges of the dosa and in the center.</li>
+<li>Cook the dosa for 2-3 minutes until the edges start to lift and turn golden brown. Use a spatula to gently lift and flip the dosa to cook the other side for an additional 1-2 minutes until it's lightly browned.</li>
+<li>Repeat the process for the remaining batter, greasing the pan lightly before each dosa.</li>
+
+<li>3. Serve:</li>
+<li>Transfer the dosas to a serving plate. Serve hot with your choice of chutney (coconut, tomato, or mint), sambar, or potato masala.</li>
+<li>Enjoy your classic dosa, a popular South Indian breakfast dish, and a versatile meal for any time of the day!</li>
+</ul>
+</div>
+
+</body>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .ingredients {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .instructions {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .burger-image {
+                max-width: 100%;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class="fas fa-seedling"></i> Recipe Predictor </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">options</a>
+            <a href="index.html">category</a>
+            <a href="index.html">contact</a>
+        </nav>
+
+
+    </div>
+
+</header>
+<br>
+<h1>Classic Vegetable Samosa Recipe</h1>
+<br>
+<br>
+<div class="ingredients">
+<ul>Ingredients:
+    <li>For the Samosa Dough:</li>
+    <li>2 cups all-purpose flour</li>
+    <li>1/4 cup vegetable oil or ghee (clarified butter)</li>
+    <li>1/2 teaspoon salt</li>
+    <li>Water, as needed</li>
+    <li>For the Samosa Filling:</li>
+<li>2 cups boiled and mashed potatoes</li>
+<li>1 cup boiled and chopped mixed vegetables (peas, carrots, and green beans)</li>
+<li>1 small onion, finely chopped</li>
+<li>2 cloves garlic, minced</li>
+<li>1-inch piece of ginger, grated</li>
+<li>1-2 green chilies, finely chopped (adjust to your spice preference)</li>
+<li>1 teaspoon cumin seeds</li>
+<li>1 teaspoon garam masala</li>
+<li>1/2 teaspoon turmeric powder</li>
+<li>1/2 teaspoon coriander powder</li>
+<li>1/2 teaspoon red chili powder (adjust to your spice preference)</li>
+<li>Salt, to taste</li>
+<li>2 tablespoons vegetable oil</li>
+
+<li>For Frying:</li>
+<li>Vegetable oil, for deep frying</li>
+</ul>
+<ul>Instructions:
+    <li>1. Prepare the Samosa Dough:</li>
+    <li>In a mixing bowl, combine the all-purpose flour, salt, and 1/4 cup of vegetable oil or ghee. Mix until the mixture resembles coarse crumbs.</li>
+    <li>Gradually add water, a little at a time, and knead the dough until it's smooth and firm. Cover the dough with a damp cloth and let it rest for 30 minutes.</li>
+    <li>2. Prepare the Samosa Filling:</li>
+<li>Heat 2 tablespoons of vegetable oil in a pan over medium heat. Add the cumin seeds and let them splutter.</li>
+<li>Add the chopped onions, minced garlic, grated ginger, and green chilies. Sauté until the onions turn translucent.</li>
+<li>Stir in the garam masala, turmeric powder, coriander powder, red chili powder, and salt. Cook for a few minutes until the spices are fragrant.</li>
+<li>Add the boiled and mashed potatoes and chopped mixed vegetables. Mix well, ensuring the spices coat the vegetables evenly. Cook for 5-7 minutes, stirring occasionally, until the filling is heated through and well combined.</li>
+<li>Remove the filling from heat and let it cool to room temperature.</li>
+
+<li>3. Shape and Fill the Samosas:</li>
+<li>Divide the rested dough into equal-sized balls, about the size of a golf ball.</li>
+<li>Roll each dough ball into a thin oval or circle, about 6 inches in diameter.</li>
+<li>Cut the rolled dough in half to create two semi-circles.</li>
+<li>Take one semi-circle, fold it in half to create a cone shape, and seal the edge by moistening it with a little water.</li>
+<li>Fill the cone with the cooled potato and vegetable mixture.</li>
+<li>Seal the open edge of the cone to form a triangular samosa. Press the edges firmly to ensure they are sealed well.</li>
+<li>Repeat this process with the remaining dough and filling.</li>
+
+<li>4. Deep Fry the Samosas:</li>
+<li>Heat vegetable oil for deep frying in a deep pan or kadai over medium-high heat.</li>
+<li>Once the oil is hot, carefully slide in the prepared samosas, a few at a time.</li>
+<li>Fry the samosas until they turn golden brown and crispy, turning occasionally to ensure even cooking. This usually takes about 8-10 minutes.</li>
+<li>Using a slotted spoon, remove the fried samosas from the oil and drain on a paper towel-lined plate.</li>
+
+<li>5. Serve:</li>
+<li>Let the samosas cool for a few minutes before serving.</li>
+<li>Enjoy your classic Vegetable Samosas with tamarind chutney, mint chutney, or your favorite dipping sauce!</li>
+<li>2. Prepare the Samosa Filling:</li>
+<li>Heat 2 tablespoons of vegetable oil in a pan over medium heat. Add the cumin seeds and let them splutter.</li>
+<li>Add the chopped onions, minced garlic, grated ginger, and green chilies. Sauté until the onions turn translucent.</li>
+<li>Stir in the garam masala, turmeric powder, coriander powder, red chili powder, and salt. Cook for a few minutes until the spices are fragrant.</li>
+<li>Add the boiled and mashed potatoes and chopped mixed vegetables. Mix well, ensuring the spices coat the vegetables evenly. Cook for 5-7 minutes, stirring occasionally, until the filling is heated through and well combined.</li>
+<li>Remove the filling from heat and let it cool to room temperature.</li>
+
+<li>3. Shape and Fill the Samosas:</li>
+<li>Divide the rested dough into equal-sized balls, about the size of a golf ball.</li>
+<li>Roll each dough ball into a thin oval or circle, about 6 inches in diameter.</li>
+<li>Cut the rolled dough in half to create two semi-circles.</li>
+<li>Take one semi-circle, fold it in half to create a cone shape, and seal the edge by moistening it with a little water.</li>
+<li>Fill the cone with the cooled potato and vegetable mixture.</li>
+<li>Seal the open edge of the cone to form a triangular samosa. Press the edges firmly to ensure they are sealed well.</li>
+<li>Repeat this process with the remaining dough and filling.</li>
+
+<li>4. Deep Fry the Samosas:</li>
+<li>Heat vegetable oil for deep frying in a deep pan or kadai over medium-high heat.</li>
+<li>Once the oil is hot, carefully slide in the prepared samosas, a few at a time.</li>
+<li>Fry the samosas until they turn golden brown and crispy, turning occasionally to ensure even cooking. This usually takes about 8-10 minutes.</li>
+<li>Using a slotted spoon, remove the fried samosas from the oil and drain on a paper towel-lined plate.</li>
+
+<li>5. Serve:</li>
+<li>Let the samosas cool for a few minutes before serving.</li>
+<li>Enjoy your classic Vegetable Samosas with tamarind chutney, mint chutney, or your favorite dipping sauce!</li>
+</ul>
+</div>
+
+</div>
+</body>

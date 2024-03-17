@@ -1,0 +1,71 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop or Browse: File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='upload.css')}}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+
+  <div class="header-2">
+
+      <a href="#" class="logo">   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5RX6tM4fUGQ9H6WE-PQvxP6uMH5ceHraWM9aDyiaW4jnwAOyI9gBuuYG4fmgv_Qf7uo&usqp=CAU" alt="Logo">Recipe Predictor </a>
+
+      <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="search here...">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+
+  </div>
+
+
+
+  <div class="header-3">
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+          <a href="index.html">home</a>
+          <a href="index.html">options</a>
+          <a href="index.html">category</a>
+          <a href="index.html">contact</a>
+      </nav>
+
+
+  </div>
+
+
+
+
+</head>
+<body>
+  <div class="Move">
+    <form method="post" action="/" enctype = "multipart/form-data">
+    <div class="drag-area">
+      <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+      <header>Drag & Drop to Upload File</header>
+      <span>OR</span>
+      <div class="Input"><input name="file" type="file"></div>
+    </div>
+    <button class="b1" method='post'>Submit</button>
+    <br>
+    <p><strong class="output" style="font-size: medium;">{{result}}</strong></p>
+    <br>
+    <hr>
+    </form>
+  </div>
+
+  <h1 style="padding-left: 20px;padding-top: 20px;font-size: 50px;">{{heading}}</h1>
+  <br>
+  <pre style="padding-left: 50px;font-size: medium;">{{text}}</pre>
+  <br>
+  <!-- <div>{{text}}</div> -->
+  
+  <script type="text/javascript" src="{{ url_for('static',filename='upload.js')}}"></script>
+
+</body>
+</html>

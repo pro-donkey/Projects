@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .ingredients {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .instructions {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+            }
+
+            .burger-image {
+                max-width: 100%;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class="fas fa-seedling"></i> Recipe Predictor </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">options</a>
+            <a href="index.html">category</a>
+            <a href="index.html">contact</a>
+        </nav>
+
+
+    </div>
+
+</header>
+<br>
+<h1>Classic Spaghetti Carbonara Recipe</h1>
+<br>
+<br>
+<div class="ingredients">
+<ul>Ingredients:
+    <li>12 ounces (340 grams) spaghetti</li>
+    <li>2 large eggs</li>
+    <li>1 cup grated Parmesan cheese</li>
+    <li>4 ounces (113 grams) pancetta or guanciale, diced</li>
+    <li>2 cloves garlic, minced</li>
+    <li>1/2 teaspoon freshly ground black pepper</li>
+    <li>Salt, to taste</li>
+    <li>Fresh parsley, chopped, for garnish</li>
+</ul>
+<ul>Instructions:
+    <li>1. Cook the spaghetti in a large pot of salted boiling water according to package instructions until al dente. Reserve about 1/2 cup of pasta cooking water, then drain the spaghetti.</li>
+    <li>2. In a mixing bowl, whisk together the eggs and grated Parmesan cheese. Set aside.</li>
+    <li>3. In a skillet over medium heat, add the diced pancetta or guanciale and cook until it becomes crispy, about 4-5 minutes. Remove excess fat if necessary.</li>
+    <li>4. Add minced garlic to the skillet with the crispy pancetta and cook for an additional 1-2 minutes until fragrant.</li>
+    <li>5. Reduce heat to low and add the cooked and drained spaghetti to the skillet. Toss the spaghetti with the pancetta and garlic, ensuring it's well coated.</li>
+    <li>6. Remove the skillet from heat and quickly pour the egg and Parmesan mixture over the spaghetti. Toss vigorously to combine, allowing the heat from the pasta to cook the eggs and create a creamy sauce. If the sauce is too thick, add a little of the reserved pasta cooking water to achieve your desired consistency.</li>
+    <li>7. Season with freshly ground black pepper and salt to taste. Be cautious with the salt, as the pancetta and Parmesan cheese are already salty.</li>
+    <li>8. Garnish with freshly chopped parsley and additional grated Parmesan cheese, if desired.</li>
+    <li>9. Serve your classic Spaghetti Carbonara immediately, and enjoy this delicious Italian pasta dish!</li>
+</ul>
+</div>
+
+</div>
+</body>
