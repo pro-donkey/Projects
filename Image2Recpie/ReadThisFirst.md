@@ -1,4 +1,4 @@
-o achieve this, you'll first need to download the models from the Google Drive link you provided and place them in the same directory as your app.py file. Then, you can run app.py from a terminal. Here are the steps:
+To achieve this, you'll first need to download the models from the Google Drive link you provided and place them in the same directory as your app.py file. Then, you can run app.py from a terminal. Here are the steps:
 
 Download the models from the Google Drive link you provided.
 Place the downloaded models in the same directory as your app.py file.
